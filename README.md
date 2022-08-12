@@ -48,5 +48,10 @@ N/A
     
     * Created initial logic for documents
     * Added assets needed to package.json file
+    * Set up all requires and export dependencies
     * Started Initial README.md
 
+**0.1 - Setup of starting routes and display to Json**
+    * Added routes for pages
+    * Made post request for creation of new notes
+    * Set up tests for display to JSON - PASSED
