@@ -55,3 +55,8 @@ N/A
     * Added routes for pages
     * Made post request for creation of new notes
     * Set up tests for display to JSON - PASSED
+
+**0.2 - Make new Notes display to webpage and make them accessible (CR)**
+    * Setup sendFile and recieve file requests
+    * Set up Array for notes to store all notes
+    * Added gitignore file

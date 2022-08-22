@@ -32,16 +32,20 @@ router.post('/notes', async function (req, res) {
     const newArray = [...notesArray, newNote];
     console.log(newArray);
     try {
+        await writeFile('db/db.json', JSON.stringify(newArray));
         res.json({msg:"OK"});
     } catch (error) {
         res.json(error);
     }
 });
 
-router.delete('/notes/:id', function (req, res) {
+router.delete('/notes/:id', async function (req, res) {
    //Delete specific note by ID
+   const notesArray = await getNotes();
+//    const note = notesArray[this.id];
+    console.log(notesArray[]); 
    try {
-        
+    handleNoteDelete(this.note);
 } catch (error) {
     res.json(error);
 }
